@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    font-family: "EBGaramond";
+}
+@font-face{
+    font-family: "EBGaramond";
+    src: url(/fuente/static/EBGaramond-Bold.ttf);
+    font-weight: bold;
+    font-size: bold;
+}
+body{
+    background-color: white;
+}
+.encabezado{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    padding: 15px;
+}
+.menu{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h1{
+    position: relative;
+    color: white;
+    left: 60px;
+
+}
+.bold{
+    color:rgb(255, 0, 0);
+}
+.navba ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.navba li a{
+    position: relative;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+}
+.navba li a:hover{
+    color: rgb(255, 0, 0);
+}
+.navba li a:active{
+    color: rgb(255, 0, 0, 0.8);
+}

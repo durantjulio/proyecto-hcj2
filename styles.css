@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    font-family: "EBGaramond";
+}
+@font-face{
+    font-family: "EBGaramond";
+    src: url(/fuente/static/EBGaramond-Bold.ttf);
+    font-weight: bold;
+    font-size: bold;
+}
+body{
+    background-image:linear-gradient(to right,rgba(0, 0, 0),rgb(0, 162, 255)) ,url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.encabezado{
+    width: 100vw;
+    padding: 15px;
+    /*background-color: black;*/
+    background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0,0.6)) ,url();
+}
+.menu{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 100px;
+}
+.bold{
+    color:rgb(0, 255, 242);
+}
+.navba ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.navba li a{
+    position: relative;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+.navba li a:hover{
+    color: rgb(0, 255, 242);
+}
+.navba li a:active{
+    color: rgb(0, 216, 180, 0.5);
+}
+
+.Portada{
+    position: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulos{
+    position: relative;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.bold_2{
+    color: rgb(0, 255, 242);
+}
+.img-yo{
+    position: relative;
+    left: 130px;
+}
