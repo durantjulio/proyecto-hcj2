@@ -1,2 +1,3 @@
 # proyecto-hcj2
-segundo proyecto (Portafolio)
+proyecto de programacion
+
