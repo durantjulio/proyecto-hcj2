@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+    font-family: "EBGaramond";
+}
+
+@font-face {
+    font-family: "EBGaramond";
+    src: url(/fuente/static/EBGaramond-Bold.ttf);
+    font-weight: bold;
+    font-size: bold;
+}
+
+body {
+    /* background-image:linear-gradient(to right,rgb(255, 80, 80),#FFC542) ,url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color: #000000;
+    color: white;
+}
+
+.encabezado {
+    width: 100vw;
+    padding: 15px;
+    /*background-color: black;*/
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0.6)), url();
+}
+
+.menu {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 100px;
+}
+
+.bold {
+    color: #FEBA08;
+}
+
+.navba ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.navba li a {
+    position: relative;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+
+.navba li a:hover {
+    color: #FEBA08;
+}
+
+.navba li a:active {
+    color: #feb808af;
+}
+.list_items {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.navba_2 {
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0; /* Agregado para mejorar el espaciado */
+    padding: 10px; /* Agregado para mejorar el espaciado */
+}
+
+
+.navba_2 li a {
+    position: relative;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+
+.navba_2 li a:hover {
+    color: #ffb700;
+}
+
+.navba_2 li a:active {
+    color: #ffb700a8;
+}
+
+
+.productos {
+    margin: 20px;
+}
+
+.content-venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7,
+.img-8 {
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.534);
+    transition: transform 0.2s;
+    /* Animación al tocar */
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover,
+.img-5:hover,
+.img-6:hover,
+.img-7:hover,
+.img-8:hover {
+    transform: scale(1.05);
+    /* Escala al pasar el mouse */
+}
+
+.buy-button,
+.specs-button {
+    background-color: #FEBA08;
+    /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Animación */
+}
+
+.buy-button:hover,
+.specs-button :hover {
+    background-color: #FEBA08;
+    /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+    /* Levanta el botón al pasar el mouse */
+}
+
+.bold-designer {
+    font-size: 70%;
+}
+
+.content-venta-tachado {
+    text-decoration: line-through red;
+}

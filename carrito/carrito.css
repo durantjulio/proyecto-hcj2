@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;*/
-    background-color: #000000;
+    background-color: #272727;
     color: white;
 }
 
@@ -73,19 +73,30 @@ body {
     color: rgb(0, 216, 180, 0.5);
 }
 
-.Portada {
-    position: initial;
+.cart-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
 
-.titulos {
-    position: relative;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
 }
-
-.bold_2 {
-    color: #FEBA08;
+#total-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.remove-button {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+.remove-button:hover {
+    background-color: #c82333; /* Color rojo más oscuro al pasar el mouse */
 }

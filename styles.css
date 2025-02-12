@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,75 +7,94 @@
     overflow: hidden;
     font-family: "EBGaramond";
 }
-@font-face{
+
+@font-face {
     font-family: "EBGaramond";
     src: url(/fuente/static/EBGaramond-Bold.ttf);
     font-weight: bold;
     font-size: bold;
 }
-body{
-    background-image:linear-gradient(to right,rgba(0, 0, 0),rgb(0, 162, 255)) ,url();
+
+body {
+    /* background-image:linear-gradient(to right,rgb(255, 80, 80),#FFC542) ,url();
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-color: #000000;
 }
-.encabezado{
+
+.encabezado {
     width: 100vw;
     padding: 15px;
     /*background-color: black;*/
-    background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0,0.6)) ,url();
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0.6)), url();
 }
-.menu{
+
+.menu {
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.menu h1{
+
+.menu h1 {
     position: relative;
     color: rgb(255, 255, 255);
     left: 100px;
 }
-.bold{
-    color:rgb(0, 255, 242);
+
+.bold {
+    color: #FEBA08;
 }
-.navba ul{
+
+.navba ul {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
-.navba li a{
+
+.navba li a {
     position: relative;
     margin: 0 20px;
     color: rgb(255, 255, 255);
     right: 20px;
     font-size: 20px;
 }
-.navba li a:hover{
-    color: rgb(0, 255, 242);
+
+.navba li a:hover {
+    color: #FEBA08;
 }
-.navba li a:active{
+
+.navba li a:active {
     color: rgb(0, 216, 180, 0.5);
 }
 
-.Portada{
+.Portada {
     position: initial;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.titulos{
+
+.titulos {
     position: relative;
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
-.bold_2{
-    color: rgb(0, 255, 242);
+
+.bold_2 {
+    color: #FEBA08;
 }
-.img-yo{
+
+.img-yo {
     position: relative;
-    left: 130px;
+    left: 155px;
+    width: 550px;
+    bottom: 50px;
+    mask-image: linear-gradient(rgb(0, 0, 0) 50%, transparent);
+    filter: drop-shadow(0px 0px 10px #ffb700);
+    -webkit-filter: drop-shadow(0px 0px 10px #ffb700);
 }

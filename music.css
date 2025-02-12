@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,95 +7,112 @@
     overflow: hidden;
     font-family: "EBGaramond";
 }
-@font-face{
+
+@font-face {
     font-family: "EBGaramond";
     src: url(/fuente/static/EBGaramond-Bold.ttf);
     font-weight: bold;
     font-size: bold;
 }
-body{
-    background-color: white;
+
+body {
+    background-color: rgb(0, 0, 0);
 }
-.encabezado{
+
+.encabezado {
     width: 100vw;
     padding: 15px;
-    background-color: rgb(0, 162, 255);
+    background-color: #000000;
 }
-.menu{
+
+.menu {
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.menu h1{
+
+.menu h1 {
     position: relative;
     color: rgb(255, 255, 255);
     left: 100px;
 }
-.bold{
-    color:rgb(0, 255, 242);
+
+.bold {
+    color: #ffb700;
 }
-.navba ul{
+
+.navba ul {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
-.navba li a{
+
+.navba li a {
     position: relative;
     margin: 0 20px;
     color: rgb(255, 255, 255);
     right: 20px;
     font-size: 20px;
 }
-.navba li a:hover{
-    color: rgb(0, 255, 242);
+
+.navba li a:hover {
+    color: #ffb700;
 }
-.navba li a:active{
-    color: rgb(0, 255, 242, 0.5);
+
+.navba li a:active {
+    color: #ffb700a8;
 }
-.h1_about, .p_about{
-   text-align: center;
-   font-size: 30px;
-   margin: 0;
-   padding: 0;
+
+.list_items {
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
-.bold_2{
-    color:rgb(0, 110, 255);
+
+.navba_2 {
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0; /* Agregado para mejorar el espaciado */
+    padding: 10px; /* Agregado para mejorar el espaciado */
+}
+
+
+.navba_2 li a {
+    position: relative;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+
+.navba_2 li a:hover {
+    color: #ffb700;
+}
+
+.navba_2 li a:active {
+    color: #ffb700a8;
+}
+
+.bold_2 {
+    color: #ffb700;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.sobre_mi{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin: 0;
-}
-.img_yo{
-    position: relative;
-    left: 40px;
-    top: 20px;
-    border: solid blue;
-    margin: 10px;
-    padding: 10px;
-}
-.presentacion{
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
-    left: 90px;
-    font-size: 20px;
-    bottom: 20px;
-}
+
+
+
+/*
 button{
     padding:10px;
     margin: 20px;
     font-size: 15px;
-    background-color: rgb(0, 255, 242);
+    background-color: #ffb700;
     border: 0;
     border-radius: 15px;
 }
@@ -107,3 +124,4 @@ button:active{
     background-color: rgb(255, 0, 221);
     color: white;
 }
+*/

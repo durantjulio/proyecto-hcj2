@@ -3,41 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio </title>
+    <title>MEWING_RECORDS </title>
     <link rel="stylesheet" href="Contact.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
     <main>
         <header>
             <div class="menu encabezado">
-                <h1>Porta<strong class="bold">folio</strong></h1>
+                <h1>Mewing<strong class="bold">Records</strong></h1>
                 <nav class="navba">
                     <ul>
                         <li><a href="index.html" >Home</a></li>
-                        <li><a href="About.html" >About</a></li>
-                        <li><a href="Skills.html" >Skills</a></li>
-                        <li><a href="Service.html" >Service</a></li>
+                        <li><a href="Music.html" >Music</a></li>
                         <li><a href="Contact.html" >Contact</a></li>
+                        <li><a href="/carrito/Store.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <h1>Contact me</h1>
-        <p><strong>-</strong>get in touch<strong>-</strong></p>
-        <div class="contanto">
-            <p>Lorem ipsum dolor sit um maiores enim doloribus!</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <fieldset>
-                <legend>Send me a message</legend>
-                <input type="checkbox"/><label>tlf</label><br>
-                <input type="checkbox"/><label>Email</label><br>
-                <input type="checkbox"/><label>instagram</label><br>
-            </fieldset>
-        </div>
-    </main>
+
+
+
+        <section class="part_1">
+          
+            <section class="Formulario">
+                <div class="container mt-5">
+                    <h1 class="text-center">Formulario de Contacto</h1>
+                    <form action="https://formsubmit.co/joandri.gonzalez54@gmail.com" method="POST" class="mt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ingrese su Nombre</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Julio Duran"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email_per" class="form-label">Ingrese su Gmail</label>
+                            <input type="email" name="email_per" id="email_per" class="form-control"
+                                placeholder="your@gmail.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email_per" class="form-label">Ingrese su Celular</label>
+                            <input type="number" name="number" id="number" class="form-control" placeholder="0212-0424"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="descripcion" class="form-label">Escriba su Mensaje</label>
+                            <textarea name="descripcion" id="descripcion" class="form-control" rows="5"
+                                placeholder="¿Algún problema?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <script src="search.js" defer></script>
+            <script>
+                document.querySelector('form').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevenir el envío predeterminado
+
+                    // Aquí puedes agregar una validación adicional si es necesario
+
+                    fetch(this.action, {
+                        method: this.method,
+                        body: new FormData(this),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            alert('Mensaje enviado con éxito!');
+                            this.reset(); // Reiniciar el formulario
+                        } else {
+                            alert('Error al enviar el mensaje. Por favor, intenta nuevamente.');
+                        }
+                    }).catch(error => {
+                        alert('Error en la conexión. Por favor, intenta nuevamente.');
+                    });
+                });
+            </script>
 </body>
 </html>
