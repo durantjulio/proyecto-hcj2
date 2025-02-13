@@ -4,7 +4,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "EBGaramond";
 }
 
@@ -16,11 +16,6 @@
 }
 
 body {
-    /* background-image:linear-gradient(to right,rgb(255, 80, 80),#FFC542) ,url();
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;*/
     background-color: #000000;
     color: white;
 }
@@ -28,7 +23,6 @@ body {
 .encabezado {
     width: 100vw;
     padding: 15px;
-    /*background-color: black;*/
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0.6)), url();
 }
 
@@ -70,7 +64,7 @@ body {
 }
 
 .navba li a:active {
-    color: rgb(0, 216, 180, 0.5);
+    color: #dd9e00;
 }
 
 .Portada {
@@ -80,12 +74,73 @@ body {
     align-items: center;
 }
 
-.titulos {
-    position: relative;
+.text-center{
+    text-align: center;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: #FEBA08;
 }
 
 .bold_2 {
     color: #FEBA08;
+}
+
+.Formulario {
+    max-width: 500px; 
+    margin: 20px auto;
+    padding: 30px; 
+    background-color: #1d1d1d;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px #FEBA08;
+}
+
+.mb-3, .mb-4 {
+    margin-bottom: 20px; 
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #FEBA08;
+    outline: none;
+}
+
+label {
+    text-align: left; 
+    color: #FEBA08;
+}
+
+.btn {
+    display: block; 
+    margin: 20px auto; 
+    background-color: #FEBA08;
+    color: #fff;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #fe0808b4;
 }

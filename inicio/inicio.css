@@ -1,0 +1,128 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    font-family: "EBGaramond";
+}
+
+@font-face {
+    font-family: "EBGaramond";
+    src: url(/fuente/static/EBGaramond-Bold.ttf);
+    font-weight: bold;
+    font-size: bold;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+
+.navs {
+
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navba ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navba li {
+    margin: 0 15px;
+}
+
+.navba i {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Estilos para el encabezado */
+.embacezado {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.bold {
+    font-weight: bold;
+    color: #FEBA08;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(206, 203, 203);
+}
+
+/* Estilos para el formulario */
+.formulario {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1d1d1d;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px #FEBA08;
+}
+
+.mb-3,
+.mb-4 {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #FEBA08;
+    outline: none;
+}
+
+label {
+    text-align: center;
+    color: #FEBA08;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #FEBA08;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #fe0808b4;
+}
