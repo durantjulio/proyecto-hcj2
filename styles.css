@@ -88,13 +88,15 @@ body {
 .bold_2 {
     color: #FEBA08;
 }
-
+h3{
+    color: red;
+}
 .img-yo {
     position: relative;
-    left: 155px;
-    width: 550px;
-    bottom: 50px;
+    left: 150px;
+    width: 750px;
+    bottom: 15px;
     mask-image: linear-gradient(rgb(0, 0, 0) 50%, transparent);
-    filter: drop-shadow(0px 0px 10px #ffb700);
-    -webkit-filter: drop-shadow(0px 0px 10px #ffb700);
+    filter: drop-shadow(0px 0px 8px #ffb805);
+    -webkit-filter: drop-shadow(0px 0px 8px #ffb805);
 }

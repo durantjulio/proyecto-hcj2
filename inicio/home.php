@@ -15,25 +15,27 @@
                 <h1>Mewing<strong class="bold">Records</strong></h1>
                 <nav class="navba">
                     <ul>
-                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="home.html" >Home</a></li>
                         <li><a href="Music.html" >Music</a></li>
                         <li><a href="Contact.html" >Contact</a></li>
                         <li><a href="/carrito/Store.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                         <li><a href="/inicio/inicio.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="conexion/logout.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div class="Portada">
             <span class="titulos">
-                <h3>Hello my people we are</h3>
+                <h3>MOLOTOV</h3>
                 <h1>Mewing<strong class="bold">Records</h1>
                 
             </span>
             <div class="img-yo">
-                <img src="/src/WhatsApp_Image_2025-02-12_at_12.45.58_PM-removebg-preview.png" alt="Mi_imagen">
+                <img src="/src/cnne-827600-molotov-grupo-removebg-preview.png"  alt="Mi_imagen">
             </div>
         </div>
     </main>
+    
 </body>
 </html>

@@ -31,11 +31,7 @@
         </main>
     </section>
     <section class="formulario">
-        <form action="/index.html" method="POST">
-            <div class="mb-3">
-                <label for="name" class="form-label"><i class="fa-solid fa-user"></i></label>
-                <input type="text" name="name" id="name" placeholder="Julio Duran" required>
-            </div>
+        <form action="conexion/validar.php" method="POST">
             <div class="mb-3">
                 <label for="email_per" class="form-label"><i class="fa-solid fa-envelope"></i></label>
                 <input type="email" name="email_per" id="email_per" placeholder="your@gmail.com"
@@ -46,6 +42,19 @@
                 <input type="text" name="password" id="password" placeholder="xxxxxx" required>
             </div>
             <button type="submit" class="btn">Enviar</button>
+            <button type="submit">Crear cuenta</button>
+            <?php
+        if(isset($_GET['error']) && $_GET['error'] == 1){
+            echo "
+            <p class='error'>Error en la autenticación</p>
+            ";
+        }
+        if(isset($_GET['sesion']) && $_GET['sesion'] == 1){
+            echo "
+            <p class='sesion'>Sesion cerrada correctamente</p>
+            ";
+        }
+        ?>
         </form>
     </section>
     <script>
